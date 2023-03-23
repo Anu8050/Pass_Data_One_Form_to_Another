@@ -35,5 +35,10 @@ namespace Pass_Data_One_Form_to_Another
             document.Add(p);
             document.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
