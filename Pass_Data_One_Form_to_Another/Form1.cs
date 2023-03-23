@@ -28,8 +28,8 @@ namespace Pass_Data_One_Form_to_Another
         private void button1_Click(object sender, EventArgs e)
         {
             SetValueForText1 = textBox1.Text;
-            SetValueForText2 = textBox1.Text;
-            SetValueForText3 = textBox1.Text;
+            SetValueForText2 = textBox2.Text;
+            SetValueForText3 = textBox3.Text;
 
             Form2 form2 = new Form2();  
             form2.Show();
