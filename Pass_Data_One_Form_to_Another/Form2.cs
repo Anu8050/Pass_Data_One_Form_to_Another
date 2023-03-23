@@ -3,13 +3,8 @@ using System.IO;
 using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using System.Collections.Generic;
-using System.Web;
-using System.Web.UI.WebControls;
-using iTextSharp.text.pdf.codec;
-using System.Drawing;
 using ceTe.DynamicPDF.Merger;
-using Aspose.Pdf.Facades;
+
 
 namespace Pass_Data_One_Form_to_Another
 {
