@@ -35,6 +35,20 @@ namespace Pass_Data_One_Form_to_Another
             form2.Show();
         }
 
-      
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker d = new DateTimePicker();
+            d.Location = new Point(360, 162);
+            d.Size = new Size(292, 26);
+            d.MaxDate = new DateTime(2024, 12, 20);
+            d.MinDate = new DateTime(2020, 1, 1);
+            d.Format = DateTimePickerFormat.Long;
+            d.Name = "MyPicker";
+            d.Font = new Font("Comic Sans MS", 12);
+            d.Visible = true;
+            d.Value = DateTime.Today;
+            this.Controls.Add(d);
+
+        }
     }
 }
