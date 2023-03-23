@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace Pass_Data_One_Form_to_Another
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public static string SetValueForText1 = "";
-        public static string SetValueForText2 = "";
-        public static string SetValueForText3 = "";
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
