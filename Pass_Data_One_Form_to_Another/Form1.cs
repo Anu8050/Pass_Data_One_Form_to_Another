@@ -34,5 +34,7 @@ namespace Pass_Data_One_Form_to_Another
             Form2 form2 = new Form2();  
             form2.Show();
         }
+
+      
     }
 }
