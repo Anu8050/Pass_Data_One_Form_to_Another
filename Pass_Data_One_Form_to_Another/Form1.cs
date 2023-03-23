@@ -50,5 +50,26 @@ namespace Pass_Data_One_Form_to_Another
             this.Controls.Add(d);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            colorDlg.AllowFullOpen = false;
+            colorDlg.AnyColor = true;
+            colorDlg.SolidColorOnly = false;
+            colorDlg.Color = Color.Red;
+
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                textBox4.ForeColor = colorDlg.Color;
+                listBox1.ForeColor = colorDlg.Color;
+                button2.ForeColor = colorDlg.Color;
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
