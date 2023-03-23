@@ -16,5 +16,12 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            label1.Text = Form1.SetValueForText1;
+            label2.Text = Form1.SetValueForText2;
+            label3.Text = Form1.SetValueForText3;
+        }
     }
 }
