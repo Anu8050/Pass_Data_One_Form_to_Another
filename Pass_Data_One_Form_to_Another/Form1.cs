@@ -71,5 +71,26 @@ namespace Pass_Data_One_Form_to_Another
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Graphics g = Graphics.FromHwnd(this.Handle);
+            ImageList photoList = new ImageList();
+            photoList.TransparentColor = Color.Red;
+            photoList.ColorDepth = ColorDepth.Depth32Bit;
+            photoList.ImageSize = new Size(200,200);
+            photoList.Images.Add(Image.FromFile(@"C:\Users\User\Desktop\db_new_prj.png"));
+            photoList.Images.Add(Image.FromFile(@"C:\Users\User\Desktop\db_new_prj_Database.png"));
+            photoList.Images.Add(Image.FromFile(@"C:\Users\User\Desktop\db_new_prj2.png"));
+            for (int count = 0; count < photoList.Images.Count; count++)
+
+            {
+
+                photoList.Draw(g, new Point(200, 200), count);
+                Application.DoEvents();
+                System.Threading.Thread.Sleep(1000);
+
+            }
+        }
     }
 }

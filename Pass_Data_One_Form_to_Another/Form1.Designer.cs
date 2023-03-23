@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +128,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(558, 309);
+            this.button2.Location = new System.Drawing.Point(689, 202);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 71);
             this.button2.TabIndex = 9;
@@ -135,7 +138,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(558, 145);
+            this.textBox4.Location = new System.Drawing.Point(538, 149);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 26);
             this.textBox4.TabIndex = 10;
@@ -149,16 +152,33 @@
             "Name",
             "Address",
             "Phone Num"});
-            this.listBox1.Location = new System.Drawing.Point(558, 190);
+            this.listBox1.Location = new System.Drawing.Point(538, 190);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 84);
             this.listBox1.TabIndex = 11;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(538, 317);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(131, 73);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Imagelist btn";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button2);
@@ -193,6 +213,8 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
