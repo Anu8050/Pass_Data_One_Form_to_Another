@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("A1");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("A2");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("A", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("B1");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("B", new System.Windows.Forms.TreeNode[] {
-            treeNode4});
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +55,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,48 +68,24 @@
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Location = new System.Drawing.Point(0, 33);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 36);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 38);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(65, 272);
+            this.treeView1.Location = new System.Drawing.Point(21, 194);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "B";
-            treeNode1.Text = "A1";
-            treeNode2.Name = "A2";
-            treeNode2.Text = "A2";
-            treeNode3.Name = "A";
-            treeNode3.Text = "A";
-            treeNode4.Name = "B1";
-            treeNode4.Text = "B1";
-            treeNode5.Name = "B";
-            treeNode5.Text = "B";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode5});
-            this.treeView1.Size = new System.Drawing.Size(293, 97);
-            this.treeView1.TabIndex = 3;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect_1);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(414, 272);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.treeView1.Size = new System.Drawing.Size(207, 172);
+            this.treeView1.TabIndex = 5;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button1);
@@ -140,6 +107,5 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Label label1;
     }
 }
