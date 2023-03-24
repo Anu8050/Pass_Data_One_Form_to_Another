@@ -37,7 +37,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 42);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 64);
             this.button1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(149, 124);
+            this.progressBar1.Location = new System.Drawing.Point(12, 116);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(225, 29);
             this.progressBar1.TabIndex = 2;
@@ -64,11 +64,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(246, 200);
+            this.button2.Location = new System.Drawing.Point(43, 310);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(102, 57);
             this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
+            this.button2.Text = "Create";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
