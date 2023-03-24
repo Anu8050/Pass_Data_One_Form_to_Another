@@ -55,9 +55,10 @@ namespace Pass_Data_One_Form_to_Another
             
         }
 
-        
-        
-
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Show();
+        }
     }
 }
