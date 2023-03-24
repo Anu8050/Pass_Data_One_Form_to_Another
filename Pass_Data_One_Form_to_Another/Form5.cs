@@ -18,7 +18,6 @@ namespace Pass_Data_One_Form_to_Another
             VScrollBar vScrollBar1 = new VScrollBar();
             vScrollBar1.Dock = DockStyle.Right;
             Controls.Add(vScrollBar1);
-            notifyIcon1.ContextMenuStrip = contextMenuStrip1;
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
@@ -46,20 +45,7 @@ namespace Pass_Data_One_Form_to_Another
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            decimal d = numericUpDown1.Value;
-            int n = Convert.ToInt32(d);
-            int f = 1;
-            for ( int i=0; i<n; i++)
-            {
-                f = f * (i + 1);
-
-            }
-            textBox2.Text = f.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
