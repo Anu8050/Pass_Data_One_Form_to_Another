@@ -33,7 +33,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -74,24 +73,13 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(131, 58);
+            this.button3.Location = new System.Drawing.Point(369, 310);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(264, 102);
             this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
+            this.button3.Text = "Entry point to form4.";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -105,12 +93,9 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -121,7 +106,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Button button3;
     }
 }

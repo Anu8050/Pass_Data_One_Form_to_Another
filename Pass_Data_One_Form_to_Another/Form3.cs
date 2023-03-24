@@ -66,17 +66,8 @@ namespace Pass_Data_One_Form_to_Another
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MenuStrip MainMenu = new MenuStrip();
-            //MainMenu.BackColor = Color.OrangeRed;
-            MainMenu.ForeColor = Color.Black;
-            MainMenu.Text = "File Menu";
-            this.MainMenuStrip = MainMenu;
-            Controls.Add(MainMenu);
-            MainMenu.Name = "MainMenu";
-            MainMenu.Dock = DockStyle.Left;
-
-
-          
+            Form4 form4 = new Form4();
+            form4.Show();
         }
     }
 }
