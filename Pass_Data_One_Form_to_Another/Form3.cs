@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -32,6 +33,30 @@ namespace Pass_Data_One_Form_to_Another
         {
             progressBar1.Value = e.ProgressPercentage;
         }
- 
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            richTextBox1_TextChanged(sender, e);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            RichTextBox dynamicRichTextBox = new RichTextBox();
+            dynamicRichTextBox.Location = new Point(202, 200);
+            dynamicRichTextBox.Width = 300;
+            dynamicRichTextBox.Height = 200;
+            dynamicRichTextBox.BackColor = Color.Red;
+            dynamicRichTextBox.ForeColor = Color.Blue;
+            dynamicRichTextBox.Text = "I am Dynamic RichTextBox";
+            dynamicRichTextBox.Name = "DynamicRichTextBox";
+            dynamicRichTextBox.Font = new Font("Georgia", 16);
+            Controls.Add(dynamicRichTextBox);
+
+        }
     }
 }
