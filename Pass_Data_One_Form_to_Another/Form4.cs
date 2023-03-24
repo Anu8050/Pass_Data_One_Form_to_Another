@@ -23,22 +23,6 @@ namespace Pass_Data_One_Form_to_Another
             treeView1.Nodes[0].Nodes[1].Nodes.Add("Grandchild");
             treeView1.Nodes[0].Nodes[1].Nodes[0].Nodes.Add("Great Grandchild");
             treeView1.EndUpdate();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
