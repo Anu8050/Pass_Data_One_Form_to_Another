@@ -40,34 +40,28 @@ namespace Pass_Data_One_Form_to_Another
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            NotifyIcon trayIcon = new NotifyIcon();
-            trayIcon.Icon = new Icon(@"C://Users//User//Downloads//home.ico");
-            trayIcon.Text = "New message";
-            trayIcon.Visible = true;
-            trayIcon.ShowBalloonTip(2000, "Information", "A new message received!", ToolTipIcon.Info);
-        }
-
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
         
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-             
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown(); 
-            this.numericUpDown1.Location = new System.Drawing.Point(26, 12);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(228, 20);
-            this.numericUpDown1.TabIndex = 0;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            decimal d = numericUpDown1.Value;
+            int n = Convert.ToInt32(d);
+            int f = 1;
+            for ( int i=0; i<n; i++)
+            {
+                f = f * (i + 1);
+
+            }
+            textBox2.Text = f.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
