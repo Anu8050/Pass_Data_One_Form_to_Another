@@ -47,7 +47,8 @@ namespace Pass_Data_One_Form_to_Another
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form6 form6 = new Form6();
+            form6.Show();
         }
     }
 }
