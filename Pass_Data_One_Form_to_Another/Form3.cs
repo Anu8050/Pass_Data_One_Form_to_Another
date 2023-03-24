@@ -58,5 +58,25 @@ namespace Pass_Data_One_Form_to_Another
             Controls.Add(dynamicRichTextBox);
 
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MenuStrip MainMenu = new MenuStrip();
+            //MainMenu.BackColor = Color.OrangeRed;
+            MainMenu.ForeColor = Color.Black;
+            MainMenu.Text = "File Menu";
+            this.MainMenuStrip = MainMenu;
+            Controls.Add(MainMenu);
+            MainMenu.Name = "MainMenu";
+            MainMenu.Dock = DockStyle.Left;
+
+
+          
+        }
     }
 }
