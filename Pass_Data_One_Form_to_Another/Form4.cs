@@ -20,16 +20,28 @@ namespace Pass_Data_One_Form_to_Another
         private void button1_Click(object sender, EventArgs e)
         {
             MenuStrip MainMenu = new MenuStrip();
-            //MainMenu.BackColor = Color.OrangeRed;
+            MainMenu.BackColor = Color.OrangeRed;
             MainMenu.ForeColor = Color.Black;
-            MainMenu.Text = "File Menu";
+            MainMenu.Text ="File Menu";
             this.MainMenuStrip = MainMenu;
             Controls.Add(MainMenu);
             MainMenu.Name = "MainMenu";
             MainMenu.Dock = DockStyle.Left;
+            this.Controls.Add(MainMenu);
+            ToolStripMenuItem FileMenu = new ToolStripMenuItem("File");
+            FileMenu.ForeColor = Color.Black;
+            FileMenu.Text = " Menu";
+            FileMenu.TextAlign = ContentAlignment.BottomRight;
+            FileMenu.ToolTipText = "Click Me";
+            MainMenu.Items.Add(FileMenu);
         }
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hiToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
