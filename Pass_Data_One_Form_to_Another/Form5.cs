@@ -24,5 +24,15 @@ namespace Pass_Data_One_Form_to_Another
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.Description = "Choose a Folder to Watch";
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = fbd.SelectedPath;
+            }
+        }
     }
 }
