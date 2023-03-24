@@ -71,5 +71,11 @@ namespace Pass_Data_One_Form_to_Another
             Form9 form9 = new Form9();
             form9.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.Show();
+        }
     }
 }
