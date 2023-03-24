@@ -26,5 +26,11 @@ namespace Pass_Data_One_Form_to_Another
         {
             timer1.Stop();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label2.Text = DateTime.Now.Day + "-" + DateTime.Now.Month + "-" + DateTime.Now.Year;
+            label3.Text = DateTime.Now.TimeOfDay + " :  " + DateTime.Now.Millisecond;
+        }
     }
 }
