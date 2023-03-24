@@ -34,5 +34,10 @@ namespace Pass_Data_One_Form_to_Another
                 textBox1.Text = fbd.SelectedPath;
             }
         }
+
+        private void FolderBrowserDialog_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
