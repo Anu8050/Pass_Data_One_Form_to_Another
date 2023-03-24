@@ -96,10 +96,10 @@ namespace Pass_Data_One_Form_to_Another
 
         }
 
-
-        
-        
-
-
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
     }
 }
