@@ -77,18 +77,18 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(21, 194);
+            this.treeView1.Location = new System.Drawing.Point(165, 181);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(207, 172);
             this.treeView1.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(510, 275);
+            this.button2.Location = new System.Drawing.Point(559, 297);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 91);
             this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
+            this.button2.Text = "Form5 entry";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
