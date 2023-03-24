@@ -45,5 +45,39 @@ namespace Pass_Data_One_Form_to_Another
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            TreeNode node = treeView1.Nodes.Add("root", "Government Space Agencies");
+
+            // Add child node
+            TreeNode sub_node = node.Nodes.Add("country", "Country");
+
+            // Add sub nodes
+            sub_node.Nodes.Add("usa", "United States").Nodes.Add("nasa", "National Aeronautics and Space Administration (NASA)");
+            sub_node.Nodes.Add("chn", "China").Nodes.Add("cnsa", "China National Space Administration (CNSA)");
+            sub_node.Nodes.Add("jpn", "Japan").Nodes.Add("jaxa", "Japan Aerospace Exploration Agency (JAXA)");
+            sub_node.Nodes.Add("ind", "India").Nodes.Add("isro", "Indian Space Research Organization (ISRO)");
+            sub_node.Nodes.Add("rus", "Russia").Nodes.Add("rfsa", "Russian Federal Space Agency (RFSA)");
+
+            sub_node.Nodes.Add("dummy-node", "Dummy Node");
+
+            // -- Remove dummy node(s)
+
+            // This will not remove the dummy-node, because it is not in this Nodes collection
+            treeView1.Nodes.RemoveByKey("dummy-node");
+
+            // Find for the dummy node & remove it
+            treeView1.Nodes.Find("dummy-node", true)[0].Remove();
+
+            // Expand all nodes
+            treeView1.ExpandAll();
+        }
+
+        private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
+        {
+            label1.Text = e.Node.Text;
+        }
     }
 }
