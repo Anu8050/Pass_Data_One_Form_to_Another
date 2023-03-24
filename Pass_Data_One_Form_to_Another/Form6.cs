@@ -34,5 +34,12 @@ namespace Pass_Data_One_Form_to_Another
         {
             Environment.Exit(0);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            form7.Show();
+        }
     }
 }
+ 
