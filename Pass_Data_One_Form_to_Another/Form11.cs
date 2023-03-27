@@ -16,5 +16,17 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            label4.Text = comboBox1.Text;
+        }
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+            comboBox1.Items.Add("Manipur");
+            comboBox1.Items.Add("Punjab");
+            comboBox1.Items.Add("Sikkim");
+        }
     }
 }
