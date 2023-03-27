@@ -16,5 +16,25 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+            usersBindingSource.Add(new Users()
+            {
+                Name = "Anusha",
+                Password = "1234",
+            });
+            usersBindingSource.Add(new Users()
+            {
+                Name = "Divya",
+                Password = "Div123",
+            });
+            usersBindingSource.Add(new Users()
+            {
+                Name = "Vijet",
+                Password = "vijet123",
+            });
+
+        }
     }
 }
