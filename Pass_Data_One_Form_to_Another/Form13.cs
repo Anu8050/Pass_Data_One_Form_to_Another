@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pass_Data_One_Form_to_Another
@@ -22,7 +16,7 @@ namespace Pass_Data_One_Form_to_Another
         private void button1_Click(object sender, EventArgs e)
         {
             Classes.Items item = new Classes.Items();
-            item.itemCode = "HP00" + lsItems.Count + 1;
+            item.itemCode = "HP00" + (lsItems.Count + 1);
             item.itemName = "Computer" + item.itemCode;
             bindingSource1.Add(item);
         }
@@ -30,13 +24,15 @@ namespace Pass_Data_One_Form_to_Another
         private void Form13_Load(object sender, EventArgs e)
         {
             bindingSource1.DataSource = lsItems;
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            if(lsItems.Count > 0)
+            {
+                bindingSource1.RemoveAt(dataGridView1.CurrentRow.Index);
+            }
+            
         }
     }
 }
