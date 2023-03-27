@@ -16,5 +16,24 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fontDialog1.Font = textBox1.Font;
+            fontDialog1.Color = textBox1.ForeColor;
+
+            if(fontDialog1.ShowDialog() != DialogResult.Cancel) 
+            {
+                textBox1.Font = fontDialog1.Font;
+                textBox1.ForeColor = fontDialog1.Color;
+
+
+            }
+        }
     }
 }
