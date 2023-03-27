@@ -86,7 +86,8 @@ namespace Pass_Data_One_Form_to_Another
 
         private void button12_Click(object sender, EventArgs e)
         {
-            
+            Form12 form12 = new Form12();
+            form12.Show();
         }
     }
 }
