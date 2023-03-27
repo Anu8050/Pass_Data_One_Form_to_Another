@@ -16,5 +16,10 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
     }
 }
