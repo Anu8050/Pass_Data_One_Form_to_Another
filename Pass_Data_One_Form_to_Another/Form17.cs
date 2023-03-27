@@ -16,5 +16,14 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text == string.Empty)
+            {
+                textBox1.Focus();
+                errorProvider1.SetError(textBox1, "Can't empty");
+            }
+        }
     }
 }
