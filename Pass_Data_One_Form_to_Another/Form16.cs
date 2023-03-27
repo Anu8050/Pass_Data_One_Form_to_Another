@@ -35,5 +35,10 @@ namespace Pass_Data_One_Form_to_Another
 
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://carldesouza.com/write-windows-event-viewer-c/");
+        }
     }
 }
