@@ -25,5 +25,15 @@ namespace Pass_Data_One_Form_to_Another
                 errorProvider1.SetError(textBox1, "Can't empty");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label4.Text = textBox2.Text;
+        }
+
+        private void Form17_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
