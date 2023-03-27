@@ -101,5 +101,10 @@ namespace Pass_Data_One_Form_to_Another
             Form14 form14 = new Form14();
             form14.Show();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
