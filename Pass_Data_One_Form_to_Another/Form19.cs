@@ -21,6 +21,7 @@ namespace Pass_Data_One_Form_to_Another
         private void button2_Click(object sender, EventArgs e)
         {
             Process.Start("excel");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,6 +42,14 @@ namespace Pass_Data_One_Form_to_Another
         private void button5_Click(object sender, EventArgs e)
         {
             Process.Start("calc");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            foreach(var process in Process.GetProcessesByName(comboBox1.Text))
+            {
+                process.Kill();
+            }
         }
     }
 }
