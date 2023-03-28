@@ -20,12 +20,27 @@ namespace Pass_Data_One_Form_to_Another
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Process.Start("excel");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Process.Start("winword");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Process.Start("mspaint");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start("notepad");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Process.Start("calc");
         }
     }
 }
