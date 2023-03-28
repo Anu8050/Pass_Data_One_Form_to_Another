@@ -152,7 +152,8 @@ namespace Pass_Data_One_Form_to_Another
 
         private void button23_Click(object sender, EventArgs e)
         {
-            
+            Form23 form23 = new Form23();
+            form23.Show();
         }
     }
 }
