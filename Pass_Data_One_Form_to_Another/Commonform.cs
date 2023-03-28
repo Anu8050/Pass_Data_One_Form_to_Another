@@ -131,5 +131,10 @@ namespace Pass_Data_One_Form_to_Another
             Form19 form19 = new Form19();
             form19.Show();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
