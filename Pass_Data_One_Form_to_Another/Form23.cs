@@ -37,5 +37,36 @@ namespace Pass_Data_One_Form_to_Another
             float tmp = cpuCounter.NextValue();
             textBox1.Text = String.Format("{0} %", tmp);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(richTextBox1.Text, new Font("Arial", 20), Brushes.Black, 12, 20);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pageSetupDialog1.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            printDialog1.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
