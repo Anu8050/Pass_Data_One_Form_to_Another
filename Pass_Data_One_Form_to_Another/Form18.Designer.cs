@@ -57,9 +57,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(24, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(367, 32);
+            this.label1.Size = new System.Drawing.Size(383, 32);
             this.label1.TabIndex = 2;
-            this.label1.Text = "PrintPrivewcontrol example.";
+            this.label1.Text = "PrintPreviewcontrol example.";
             // 
             // Form18
             // 
