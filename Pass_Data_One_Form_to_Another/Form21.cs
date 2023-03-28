@@ -16,5 +16,16 @@ namespace Pass_Data_One_Form_to_Another
         {
             InitializeComponent();
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Date: " + maskedTextBox1.Text);
+
+        }
     }
 }
