@@ -36,7 +36,7 @@
             // maskedTextBox1
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(101, 118);
+            this.maskedTextBox1.Location = new System.Drawing.Point(93, 94);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(249, 39);
@@ -47,7 +47,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(482, 118);
+            this.button1.Location = new System.Drawing.Point(397, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 42);
             this.button1.TabIndex = 1;
